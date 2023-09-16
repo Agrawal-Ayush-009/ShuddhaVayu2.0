@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "343459198750",
+    "firebase_url": "https://shuddhavayu-default-rtdb.firebaseio.com",
+    "project_id": "shuddhavayu",
+    "storage_bucket": "shuddhavayu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343459198750:android:1fe8341cd0ce61a53d7b0f",
+        "android_client_info": {
+          "package_name": "com.example.shuddhavayu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343459198750-4efg9p6dhq6k2phqgl037eejculeek8v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shuddhavayu",
+            "certificate_hash": "657461f78553b35251c6e3ffa0de2c1d58778543"
+          }
+        },
+        {
+          "client_id": "343459198750-ufdu7e3ho16me1gapi86sqnhkj4r2du4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF53Bk0wSpDuKH6wUZz5RDZDIoBPEXjI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343459198750-ufdu7e3ho16me1gapi86sqnhkj4r2du4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

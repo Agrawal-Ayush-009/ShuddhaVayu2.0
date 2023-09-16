@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    tools:context=".CitizenForm">
+
+    <TextView
+        android:id="@+id/wel"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/cit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Citizens"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wel"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="40dp"
+        android:layout_marginLeft="33dp"
+        />
+
+    <TextView
+        android:id="@+id/infoHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="33dp"
+        android:layout_marginLeft="33dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Please fill your"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cit"
+        />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Information"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoHeading"
+        />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_editext"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        android:hint="Full Name"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:inputType="text"
+        android:fontFamily="@font/inter_medium"
+        android:layout_margin="33dp"
+        />
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintTop_toTopOf="@id/Name"
+        app:layout_constraintBottom_toBottomOf="@id/Name"
+        app:layout_constraintLeft_toLeftOf="@id/Name"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/account_box"
+        />
+
+    <EditText
+        android:id="@+id/DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_editext"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        android:hint="Date of Birth (dd-mm-yy)"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:fontFamily="@font/inter_medium"
+        android:inputType="text"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintTop_toTopOf="@id/DOB"
+        app:layout_constraintBottom_toBottomOf="@id/DOB"
+        app:layout_constraintLeft_toLeftOf="@id/DOB"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/calendar_month"
+        />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_editext"
+        app:layout_constraintTop_toBottomOf="@+id/DOB"
+        android:hint="Your Location"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:inputType="text"
+        android:fontFamily="@font/inter_medium"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="16dp"        />
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintTop_toTopOf="@id/location"
+        app:layout_constraintBottom_toBottomOf="@id/location"
+        app:layout_constraintLeft_toLeftOf="@id/location"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/map"
+        />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_editext"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        android:hint="Email"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:inputType="text"
+        android:fontFamily="@font/inter_medium"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintTop_toTopOf="@id/Email"
+        app:layout_constraintBottom_toBottomOf="@id/Email"
+        app:layout_constraintLeft_toLeftOf="@id/Email"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/mail"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:background="@drawable/solid_button"
+        android:fontFamily="@font/inter_medium"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Get Started!"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShuddhaVayu" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#26497F</item>
+
+    </style>
+
+    <style name="Theme.ShuddhaVayu" parent="Base.Theme.ShuddhaVayu" />
+</resources>

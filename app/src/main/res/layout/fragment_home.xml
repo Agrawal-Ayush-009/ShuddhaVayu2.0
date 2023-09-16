@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/android_large___7__1_">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/heading"
+        app:layout_constraintBottom_toBottomOf="@+id/heading"
+        android:src="@drawable/arrow_back_ios_new"
+        app:layout_constraintRight_toLeftOf="@+id/heading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="ShuddhaVayu"
+        android:textSize="20dp"
+        android:layout_marginLeft="65dp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:layout_marginTop="54dp"
+        />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/location_on"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/location"
+        app:layout_constraintTop_toTopOf="@+id/location"
+        app:layout_constraintBottom_toBottomOf="@id/location"
+        android:text="Noida,UttarPradesh"
+        android:fontFamily="@font/inter_semibold"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/CoinButton"
+        app:layout_constraintBottom_toBottomOf="@id/CoinButton"
+        app:layout_constraintLeft_toLeftOf="@id/CoinButton"
+        android:src="@drawable/universal_currency_alt"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CoinButton"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/coin_button"
+        android:text="30"
+        android:textSize="10dp"
+        android:fontFamily="@font/inter_semibold"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/changeLocation"
+        app:layout_constraintBottom_toBottomOf="@id/changeLocation"
+        app:layout_constraintTop_toTopOf="@id/changeLocation"
+        android:src="@drawable/near_me"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/changeLocation"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/change_location_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CoinButton"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        android:text="Change\n Location"
+        android:textSize="10dp"
+        android:paddingLeft="20dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/inter_semibold" />
+
+    <FrameLayout
+        android:id="@+id/mapCard"
+        android:layout_width="325dp"
+        android:layout_height="190dp"
+        android:background="@drawable/map_image"
+        app:layout_constraintTop_toBottomOf="@id/changeLocation"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="31dp"
+        android:onClick="openMap"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/MAP_Detailed"
+            android:layout_width="122dp"
+            android:layout_height="24dp"
+            android:background="@drawable/solid_button"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="190dp"
+            android:layout_marginBottom="10dp"
+            android:text="View Detailed Map"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:onClick="openMap"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/AQICard"
+        android:layout_width="325dp"
+        android:layout_height="140dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapCard"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/aqi_card"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/airwave"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AQI"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="32dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="11dp"
+            android:textColor="#112A4E"
+            />
+        <TextView
+            android:id="@+id/AQI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="32dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="11dp"
+            android:textColor="#109C48"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Temperature"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="12dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28°C"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginRight="14dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AQI_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Detailed Information"
+            android:background="@drawable/no_outline_button"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="140dp"
+            />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/WQICard"
+        android:layout_width="325dp"
+        android:layout_height="140dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AQICard"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/wqi_card"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/airwave"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="9dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WQI"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="32dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="11dp"
+            android:textColor="#6C6210"
+            />
+        <TextView
+            android:id="@+id/WQI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="78.14"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="32dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="11dp"
+            android:textColor="#109C48"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25.28m"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginRight="14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groud Water Level"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="12dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="14dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/WQI_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See Detailed Information"
+            android:background="@drawable/no_outline_button"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="140dp"
+            />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
