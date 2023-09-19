@@ -15,9 +15,11 @@
         android:src="@drawable/arrow_back_ios_new"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="42dp"
+        android:onClick="backCLick"
         />
 
     <TextView
+        android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/backButton"
@@ -28,6 +30,129 @@
         android:textSize="25dp"
         android:fontFamily="@font/inter_semibold"
         />
+
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        android:layout_margin="30dp"
+        android:src="@drawable/user_profile"
+        android:tag="imgProfile"
+        />
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Ayush Ag"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="32dp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileName"
+        android:background="@drawable/locationtext"
+        android:text="Noida, UttarPradesh"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/yourReport"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        android:text="Your Reports"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingRight="80dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/profile_text"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/yourReport"
+        app:layout_constraintBottom_toBottomOf="@id/yourReport"
+        app:layout_constraintLeft_toLeftOf="@id/yourReport"
+        android:src="@drawable/warning_white"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/actionTaken"
+        android:layout_width="310dp"
+        android:layout_height="57dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourReport"
+        android:text="Action Taken"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingRight="80dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/inter_semibold"
+        android:background="@drawable/profile_text"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/actionTaken"
+        app:layout_constraintBottom_toBottomOf="@+id/actionTaken"
+        app:layout_constraintLeft_toLeftOf="@+id/actionTaken"
+        android:src="@drawable/add_task"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/reportCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/yourReport"
+        app:layout_constraintBottom_toBottomOf="@id/yourReport"
+        app:layout_constraintRight_toRightOf="@id/yourReport"
+        android:text = "5"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:textColor="#EAED3E"
+        android:fontFamily="@font/inter_medium"
+        />
+
+    <TextView
+        android:id="@+id/actionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/actionTaken"
+        app:layout_constraintBottom_toBottomOf="@id/actionTaken"
+        app:layout_constraintRight_toRightOf="@id/actionTaken"
+        android:text = "0"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:textColor="#78D377"
+        android:fontFamily="@font/inter_medium"
+        />
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

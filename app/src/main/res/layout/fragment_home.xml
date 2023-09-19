@@ -97,11 +97,14 @@
         app:layout_constraintTop_toBottomOf="@id/CoinButton"
         android:layout_marginTop="26dp"
         android:layout_marginRight="20dp"
-        android:text="Change\n Location"
+        android:text="Get\n Location"
         android:textSize="10dp"
         android:paddingLeft="20dp"
         android:textAllCaps="false"
-        android:fontFamily="@font/inter_semibold" />
+        android:fontFamily="@font/inter_semibold"
+        android:tag="1"
+        android:onClick="tapLocation"
+        />
 
     <FrameLayout
         android:id="@+id/mapCard"
@@ -141,6 +144,7 @@
         app:layout_constraintTop_toBottomOf="@+id/mapCard"
         android:layout_marginTop="24dp"
         android:background="@drawable/aqi_card"
+        android:onClick="tapAQI"
         >
         <ImageView
             android:layout_width="wrap_content"
@@ -219,6 +223,7 @@
         app:layout_constraintTop_toBottomOf="@+id/AQICard"
         android:layout_marginTop="24dp"
         android:background="@drawable/wqi_card"
+        android:onClick="tapWQI"
         >
         <ImageView
             android:layout_width="wrap_content"
