@@ -103,6 +103,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -118,6 +119,29 @@
         android:layout_marginRight="35dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/submitProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="#26497F"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionText"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/successCheck"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionText"
+        android:src="@drawable/round_check_circle_outline_24"
+        android:visibility="gone"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
