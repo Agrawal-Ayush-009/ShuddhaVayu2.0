@@ -22,7 +22,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.auth.User
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -39,7 +38,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
+           // .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
 
@@ -51,6 +50,7 @@ class SignUpActivity : AppCompatActivity() {
             signIn()
         }
     }
+
 
 
     override fun onStart() {
@@ -132,10 +132,15 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     fun mobileVerify(view: View) {
-        val intent = Intent(this, PhoneVerification::class.java)
-        startActivity(intent)
-    }
+     //   auth = FirebaseAuth.getInstance()
 
+       // if (auth.currentUser == null) {
+            val intent = Intent(this, PhoneVerification::class.java)
+            startActivity(intent)
+            finish()
+       // }
+
+    }
     fun mailVerify(view: View) {
         val intent=Intent(this,MailVerification::class.java)
         startActivity(intent)
