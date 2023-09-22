@@ -1,9 +1,5 @@
 package com.example.shuddhavayu.models
 
-import java.net.Inet4Address
-import java.time.chrono.ChronoLocalDateTime
-import java.util.Date
-
 data class UserReports(
     val id: Int = 0,
     val image: String = "",
